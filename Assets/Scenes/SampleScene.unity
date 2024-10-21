@@ -562,10 +562,20 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7926839288223873370, guid: 9d157358549fdd248bd2b280d320fdfe,
+        type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8555339612881038777, guid: 9d157358549fdd248bd2b280d320fdfe,
         type: 3}
       propertyPath: m_CastShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8555339612881038777, guid: 9d157358549fdd248bd2b280d320fdfe,
+        type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -627,6 +637,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 620328440}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &894024730 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 9d157358549fdd248bd2b280d320fdfe,
+    type: 3}
+  m_PrefabInstance: {fileID: 620328440}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1581179886
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +690,7 @@ GameObject:
   - component: {fileID: 1803901731}
   - component: {fileID: 1803901732}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: FPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -809,6 +825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 540885974}
+  anim: {fileID: 894024730}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
