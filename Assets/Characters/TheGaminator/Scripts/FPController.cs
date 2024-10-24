@@ -40,9 +40,11 @@ public class FPController : MonoBehaviour
             anim.SetBool("Arm", !anim.GetBool("Arm"));
 
         if (Input.GetMouseButtonDown(0))
-            anim.SetBool("Fire", true);
-        else if (Input.GetMouseButtonUp(0))
-            anim.SetBool("Fire", false);    
+            anim.SetTrigger("Fire");
+
+        if (Input.GetKey(KeyCode.R))
+            anim.SetTrigger("Reload");
+           
     }
 
     void FixedUpdate()
